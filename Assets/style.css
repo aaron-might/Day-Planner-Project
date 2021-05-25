@@ -1,0 +1,121 @@
+body {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1;
+  background-color:  #d4cdf4;
+  box-sizing: content-box;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #102dd3;;
+  border-left: 1px solid  #685155;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image:url(Autumn_Parks.jpg);
+  color: transparent;
+  color: #383737;
+  border-radius: 0;
+  border-bottom: 10px solid #685155;
+}
+
+h1 {
+  font-family: 'Dancing Script', sans-serif;
+}
+
+#currentDay{
+  font-size: 32px;
+  font-family: 'Dancing Script', sans-serif;
+}
+.hdr-background {
+  width : 50%;
+  display: inline-block;
+  background-color: rgb(234, 243, 241);
+  border-radius: 8%;
+}
+.container-fluid {
+  margin-bottom: 100px;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.description {
+  white-space: pre-wrap;
+  font-size: 24px;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 16px;
+  max-width: 100%;
+}
+
+.row {
+  white-space: pre-wrap;
+  color: #545455;
+  height: 60px;
+  border-top: 1px solid white;
+
+}
+img {
+  float: right;
+  width: 50%;
+  height: 70%;
+  margin-left: 60px;
+  margin-top: 24px;
+}
+.hour {
+  background-color: cornflowerblue;
+  color: #023000;
+  border-top: 1px lightblue #39beb3;
+  border-radius:8%;
+  padding: 0;
+  text-align: right;
+  width: 100%;
+}
+
+.past {
+  background-color: #b1aeae;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.8s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  img {
+    display: inline;
+  }
+}
+@media screen and (max-width:685px){
+  .hour {
+    font-size:small;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
