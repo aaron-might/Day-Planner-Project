@@ -2,7 +2,7 @@ body {
   font-family: Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
   line-height: 1;
-  background-color:  #d4cdf4;
+  background-color:  #e8eff0;
   box-sizing: content-box;
 }
 
@@ -10,9 +10,8 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #102dd3;;
+  color: #0a0a0a;;
   border-left: 1px solid  #685155;
-  padding: 10px;
 }
 
 .jumbotron {
@@ -21,7 +20,7 @@ textarea {
   color: transparent;
   color: #383737;
   border-radius: 0;
-  border-bottom: 10px solid #685155;
+  border-bottom: 10px solid #c4a9102c;
 }
 
 h1 {
@@ -35,8 +34,9 @@ h1 {
 .hdr-background {
   width : 50%;
   display: inline-block;
-  background-color: rgb(234, 243, 241);
+  background-color: rgb(245, 243, 239);
   border-radius: 8%;
+  transition:cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 .container-fluid {
   margin-bottom: 100px;
@@ -80,17 +80,17 @@ img {
 }
 
 .past {
-  background-color: #b1aeae;
+  background-color: #dadba1;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #e66f68;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #d4b1bd;
   color: white;
 }
 
@@ -98,7 +98,7 @@ img {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: cornflowerblue;
   color: white;
 }
 
