@@ -3,9 +3,8 @@
 ## The Task
 A simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery and Moment.js.
 
-Acceptance Criteria
+## Acceptance Criteria
 
-```
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
@@ -20,19 +19,17 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
-
 The following animation demonstrates the application functionality:
 
 ![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
 
-## Review
+### Review
 
 You are required to submit the following for review:
 
 * The URL of the deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project
-
+* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
 ## Deployment
 
