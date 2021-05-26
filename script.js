@@ -1,27 +1,25 @@
 $(document).ready(function () {
     var events = [];
-    //listen for save buttton clicks
-    $(".saveBtn").on("click", function () {
-        //get nearby balues
+
+    $(".saveBtn").on("click", function() {
+
         var value = $(this).siblings(".description").val();
         var time = $(this).parents().attr("id");
         var dateAdded = moment().format("dddd, MMM Do");
-
-        events.push({ description: value, time: time, date: dateAdded });
-        //save the value in localstorage as time 
+        
         localStorage.setItem("events", JSON.stringify(events));
+        
+        events.push({ description: value, time: time, date: dateAdded});
     });
 
     function hourUpdater() {
-        //get currwnt number of hours
+
         var currentHour = moment().hours();
-        //loop overe time in
+
         $(".time-block").each(function () {
             var blockhour = parseInt($(this).attr("id").split("-")[1]);
 
-            //check if we're moved past this time
-            //if the current hour is greater than the block hour
-            //then add class "past"
+
             if (currentHour > blockhour) {
                 $(this).addClass("past");
             }
@@ -32,8 +30,6 @@ $(document).ready(function () {
                 $(this).removeClass("past");
                 $(this).addClass("present");
             }
-            //else 
-            //rempove class "past", rempve class "present", add class"futures"
 
             else {
                 $(this).removeClass("past");
@@ -43,9 +39,6 @@ $(document).ready(function () {
         });
     }
     hourUpdater();
-
-    //set up interval to chekcif current time needs to be updated
-    //which means execute hourupdater function evr 25 seconds
 
     var secondsLeft = 15;
     function setTime() {
@@ -60,7 +53,6 @@ $(document).ready(function () {
     }
     setTime();
 
-    //reset on new day
     var currentDay = moment().format("dddd, MMMM Do");
     for (var i = 0; i < events.length; i++) {
         if (currentDay.isAfter(events[i].date)) {
@@ -70,7 +62,6 @@ $(document).ready(function () {
             events.length = 0;
         }
     }
-    //load any saved data from localStorage
     var storedEvents = JSON.parse(localStorage.getItem("getItem"));
 
     if (storedEvents !== null) {
